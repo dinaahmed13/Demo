@@ -2,7 +2,7 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.pages.BasePage;
+import org.example.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,8 +18,17 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public WebElement getUserNameField() {
+    public WebElement     getUserNameField() {
         log.info("Getting username field");
+        return findElement(userNameField);
+    }
+
+    public WebElement etUserNameField() {
+        log.info("Getting  field");
+        return findElement(userNameField);
+    }
+    public WebElement geUserNameField() {
+        log.info("Getting username =");
         return findElement(userNameField);
     }
 

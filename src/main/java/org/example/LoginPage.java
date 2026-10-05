@@ -18,7 +18,7 @@ public class LoginPage     extends BasePage {
         super(driver);
     }
 
-    public WebElement     getUserNameField() {
+    public    WebElement     getUserNameField() {
         log.info("Getting username field");
         return findElement(userNameField);
     }

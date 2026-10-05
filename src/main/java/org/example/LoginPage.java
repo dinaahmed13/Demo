@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage extends BasePage {
+public class LoginPage     extends BasePage {
     private Logger log= LogManager.getLogger(LoginPage.class);
     private final By userNameField=By.id("user-name");
     private final By passwordField=By.id("password");
